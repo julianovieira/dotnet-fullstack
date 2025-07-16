@@ -1,9 +1,10 @@
-namespace MoneyFlow.Core.Responses
+namespace MoneyFlow.Core.Responses;
 
-using MoneyFlow.Core.Configuration;
+
 using System.Text.Json.Serialization;
 
-public class PagedResponse<TData> : Responses<TData>
+
+public class PagedResponse<TData> : Response<TData>
 {
     [JsonConstructor]
     public PagedResponse(TData data, int currentPage = 1, int totalCount, int pageSize = Configuration.DefaultPageSize)
@@ -22,7 +23,7 @@ public class PagedResponse<TData> : Responses<TData>
 
 
     public int CurrentPage { get; set; }
-    public int TotalPages => (int).Math.Ceiling(TotalCount /(double) PageSize);
+    public int TotalPages => (int)Math.Ceiling(TotalCount /(double) PageSize);
     public int PageSize { get; set; } = Configuration.DefaultPageSize;
     public int TotalCount { get; set; }
 }

@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MoneyFlow.Core.Requests.Categories;
 
 public class UpdateCategoryRequest : Request 

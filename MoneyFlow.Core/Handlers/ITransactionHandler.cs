@@ -1,6 +1,6 @@
 namespace MoneyFlow.Core.Handlers;
 
-using MoneyFlow.Core.Response;
+using MoneyFlow.Core.Responses;
 using MoneyFlow.Core.Models;
 using MoneyFlow.Core.Requests.Transactions; 
 

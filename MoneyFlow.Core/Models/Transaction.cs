@@ -1,6 +1,8 @@
+using MoneyFlow.Core.Enums;
+
 namespace MoneyFlow.Core.Models;
 
-public class Category
+public class Transaction
 {
     public long Id { get; set; }
     public string Title { get; set; } = string.Empty;

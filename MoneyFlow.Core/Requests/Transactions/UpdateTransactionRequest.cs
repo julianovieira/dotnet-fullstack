@@ -1,4 +1,4 @@
-namespace MoneyFlow.Core.Request.Transactions;
+namespace MoneyFlow.Core.Requests.Transactions;
 using MoneyFlow.Core.Enums;
 using System.ComponentModel.DataAnnotations;
 
@@ -14,9 +14,6 @@ public class UpdateTransactionRequest : Request
     public ETransactionType Type { get; set; } = ETransactionType.Withdraw;
 
     [Required (ErrorMessage = "Categoria inválida.")]
-    public decimal Amount { get; set; }
-
-    [Required(ErrorMessage = "Valor inválido.")]
     public decimal Amount { get; set; }
 
     [Required(ErrorMessage = "Categoria inválida.")]

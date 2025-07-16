@@ -1,4 +1,5 @@
 ﻿namespace MoneyFlow.Core.Requests.Transactions;
+
 using MoneyFlow.Core.Enums;
 using System.ComponentModel.DataAnnotations;
 

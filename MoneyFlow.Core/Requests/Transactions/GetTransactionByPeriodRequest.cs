@@ -1,4 +1,4 @@
-namespace MoneyFlow.Core.Request.Transactions;
+namespace MoneyFlow.Core.Requests.Transactions;
 
 public class GetTransactionByPeriodRequest : Request
 {

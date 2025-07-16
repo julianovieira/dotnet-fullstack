@@ -1,14 +1,15 @@
 namespace MoneyFlow.Core.Responses;
 
 using System.Text.Json.Serialization;
-using MoneyFlow.Core.Configuration;
 
 public class Response<TData>
 {
     private int _code = Configuration.DefaultStatusCode;
 
     [JsonConstructor]
-    public Response() => _code = Configuration.DefaultStatusCode;
+    public Response() {
+        _code = Configuration.DefaultStatusCode;
+    }
 
     public Response(
         TData data, 
@@ -25,6 +26,6 @@ public class Response<TData>
     public TData? Data { get; set; }
 
     [JsonIgnore]
-    public bool IsSuccess => _code >= 200 and _code <= 299;
+     public bool IsSuccess => _code >= 200 && _code <= 299;
 
 }

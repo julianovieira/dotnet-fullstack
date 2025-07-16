@@ -1,4 +1,4 @@
-namespace MoneyFlow.Core.Models;
+namespace MoneyFlow.Core.Enums;
 
 public enum ETransactionType
 {
